@@ -1,0 +1,88 @@
+<!--
+  Katherine Feldman 
+  Wednesday, December 11, 2019
+  Final Assignment: Javascript
+  index.html
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Products | Sugar Shack Candy</title>
+    <meta name="description" content="This is the Sugar Shack Candy Store products list">
+    <meta name="author" content="Katherine Feldman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Montserrat:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="halign">
+        <div class="menu-main">
+          <button type="button" class="hammy"><img class="nav-img" src="img/icons/hamburger.svg" alt="hamburger menu"/></button>
+            <ul class="menu-hidden">
+              <li class="hidden-home"><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          <a href="index.html"><img class="img-logo" src="img/logo/logo1.svg" alt="Sugar Shack Candy Shop"/></a>
+          <a href="#"><img class="nav-img" src="img/icons/cart.svg" alt="shopping cart"/></a>
+          </div>
+      </nav>
+    </header>
+    <div class="feature-banner">
+      <p>Save 15% on every $60 purchase!</p>
+    </div>
+    <main>
+      <div class="feature-filter">
+        <form>
+          <select class="sortByPrice" name="sortByPrice" id="sortByPrice">
+            <option selected disabled>Sort</option>
+            <option value="lowToHigh">Low to high</option>
+            <option value="highToLow">High to low</option>
+          </select>
+        </form>
+        <form>   
+          <label for="search"></label>
+          <select class="filter-dropdown" name="categoryName" id="search">
+            <option selected disabled>Filter</option>
+            <option value="gummies">Gummies</option>
+            <option value="chocolateCovered">Chocolate Covered</option>
+            <option value="chocolate">Chocolate</option>
+          </select>
+        </form>
+        <input class="feature-search" type="text" name="search-bar">
+        <button type="button"><img class="img-search" src="img/icons/search.svg" alt="search button"/></button>
+      </div>
+      <section class="product-list" id="productList">
+        <div class="filter-hidden">
+          <h2>Collections</h2>
+          <ul class="collections-list">
+            <li><a href="#">Jellybeans</a></li>
+            <li><a href="#">Gummies</a></li>
+            <li><a href="#">Chocolate</a></li>
+            <li><a href="#">Hard Candy</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="products" id=productList></div>
+      
+      <nav aria-label="pagination" class="more-less">
+        <ul class="pagination">
+          <li><a href=""><span aria-hidden="true"><<</span><span class="visuallyhidden">previous set of pages</span></a></li>
+          <li><a href=""><span class="visuallyhidden">page </span>1</a></li>
+          <li><a href="" aria-current="page"><span class="visuallyhidden">page </span>2</a></li>
+          <li><a href=""><span class="visuallyhidden">next set of pages</span><span aria-hidden="true">>></span></a></li>
+        </ul>
+      </nav>
+    </main>
+    <footer>
+      <img class="img-footer" src="img/logo/logo2.svg" alt="Logo"/>
+      <p class="text-footer">Life made sweeter<p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

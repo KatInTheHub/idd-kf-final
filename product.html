@@ -1,0 +1,112 @@
+<!--
+  Katherine Feldman 
+  Thursday, April 11, 2019
+  Assignment 4: Responsive Site Complete
+  product.html
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gummy Bears | Sugar Shack Candy</title>
+    <meta name="description" content="Sugar Shack Candy Store Gummy Bears 100g">
+    <meta name="author" content="Katherine Feldman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="halign">
+        <ul class="menu-main">
+          <li><button type="button" class="hammy"><img class="nav-img" src="img/icons/hamburger.svg" alt="hamburger menu"/></button></li>
+            <ul class="menu-hidden">
+              <li class="hidden-home"><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          <li><a href="index.html"><img class="img-logo" src="img/logo/logo1.svg" alt="Sugar Shack Candy Shop"/></a></li>
+          <li><a href="#"><img class="nav-img" src="img/icons/cart.svg" alt="shopping cart"/></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="feature-banner">
+      <p>Save 10% on every $60 purchase!</p>
+    </div>
+    <main>
+      <div class="feature-new-search">
+        <input class="feature-search" type="text" name="search-bar">
+        <button type="button"><img class="img-search" src="img/icons/search.svg" alt="search button"/></button>
+      </div>
+      <div class="product-highlight">
+        <div class="filter-hidden">
+          <h2>Collections</h2>
+          <ul class="collections-list">
+            <li><a href="#">Jellybeans</a></li>
+            <li><a href="#">Gummies</a></li>
+            <li><a href="#">Chocolate</a></li>
+            <li><a href="#">Hard Candy</a></li>
+          </ul>
+        </div>
+        <div class="main-content">
+          <div>
+            <h1>GUMMY BEARS</h1>
+            <img class="product-img" src="img/products/gummy-bears.jpg" alt="Classic Gummy Bears"/>
+            <p>$7.99 /100g</p>
+
+            <div class="form-product-order">
+              <div>
+                <label>Quantity </label>
+                <input class="form-qty" type="text" name="qty">
+              </div>
+              <button class="form-atc-btn" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <section class="product-information">
+            <h2>PRODUCT INFORMATION</h2>
+            <p>Bears are dangerous.. but these ones are delicious! Nutritionists may say these ones are dangerous too but let's focus on the cute shapes and pretty colours they come in! Green, yellow, red, oh my! Inspired by Paddington Bear, these are hard to resist.</p>
+          </section>
+          <section class="product-ingredients">
+            <h2>INGERDIENTS</h2>
+            <p>Corn syrup, sugar, gelatin, dextrose, citric acid, starch, artificial and natural flavors, fractionated coconut oil, carnuba wax, beeswax coating, artificial colors (yellow 5, red 40, blue 1)</p>
+          </section>
+          <section class="rating-product">      
+            <h2>REVIEWS</h2>
+            <div class="rating-customer-review">
+              <h4>Sean Connery</h4>
+              <img class="img-rating" src="img/icons/rating-stars.svg" alt="Rating">
+              <p>Sugar Shack has quality sweets. Sean Connery fully endorses Sugar Shack.</p>
+            </div>
+            <div class="rating-customer-review">
+              <h4>Jim Grover</h4>
+              <img class="img-rating" src="img/icons/rating-stars.svg" alt="Rating">
+              <p>I was just living a boring life until my friend introduced me to Sugar Shack. Now I'm a rockstar.. all of my dreams are coming true and it's all thanks to high fructose corn syrup.</p>
+            </div>
+            <button class="btn-review" type="button">REVIEW</button>
+          </section>
+          <h2>SIMILAR PRODUCTS</h2>
+          <section class="product-list">
+            <div class="product-box">
+              <a href="#"><img class="p-img" src="img/products/chocolate-cherries.jpg" alt="Chocolate Cherries"/></a>
+              <p>Chocolate Cherries</p>
+            </div>
+            <div class="product-box">
+              <a href="#"><img class="p-img" src="img/products/rainbow-lollipop.jpg" alt="Rainbow Lollipops"/></a>
+              <p>Rainbow Lollipops</p>
+            </div>
+            <div class="product-box">
+              <a href="#"><img class="p-img" src="img/products/candy-apple.jpg" alt="Candy Apples"/></a>
+              <p>CANDY APPLES</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    <footer>
+      <img class="img-footer" src="img/logo/logo2.svg" alt="Logo"/>
+      <p class="text-footer">Life made sweeter<p>
+    </footer>
+  </body>
+</html>
